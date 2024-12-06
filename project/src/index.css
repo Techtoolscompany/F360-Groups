@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full bg-[#1a1d24];
+  }
+  
+  body {
+    @apply h-full text-gray-900 dark:text-white;
+  }
+
+  #root {
+    @apply h-full;
+  }
+}
+
+@layer components {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+  }
+
+  .scrollbar-track-transparent::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    @apply w-2;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* FullCalendar customization */
+.fc {
+  @apply h-full;
+}
+
+.fc-view {
+  @apply h-full overflow-y-auto;
+}
+
+.fc-scroller {
+  @apply !h-auto !overflow-y-auto;
+}
+
+/* Rest of your existing styles... */
