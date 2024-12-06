@@ -1,1 +1,1 @@
-/// <reference path="./node_modules/@nativescript/types-minimal/index.d.ts" />
+// Type definitions for the application
